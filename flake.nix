@@ -31,17 +31,17 @@
       SKIP_GIT=1;
 
       patchPhase = ''
-        mkdir -p keyboards/lemokey/p1_pro/ansi_encoder/keymaps/chivay/
-        cp -r ${./chivay}/* keyboards/lemokey/p1_pro/ansi_encoder/keymaps/chivay/
+        mkdir -p keyboards/lemokey/p1_pro/ansi_encoder/keymaps/rounndel/
+        cp -r ${./rounndel}/* keyboards/lemokey/p1_pro/ansi_encoder/keymaps/rounndel/
       '';
 
       buildPhase = ''
-        qmk compile -kb lemokey/p1_pro/ansi_encoder -km chivay
+        qmk compile -kb lemokey/p1_pro/ansi_encoder -km rounndel
       '';
 
       installPhase = ''
         mkdir -p $out
-        cp .build/lemokey_p1_pro_ansi_encoder_chivay.bin $out/fw.bin
+        cp .build/lemokey_p1_pro_ansi_encoder_rounndel.bin $out/fw.bin
       '';
     };
   };
