@@ -1,5 +1,5 @@
 {
-  description = "A very basic flake";
+  description = "Keyboard config for Lemokey P1 Pro";
 
   inputs = {
     nixpkgs.url = "github:chivay/nixpkgs?ref=qmk-fix";
